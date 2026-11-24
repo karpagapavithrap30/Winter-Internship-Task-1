@@ -4,74 +4,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Karpaga Pavithra - Resume</title>
+    <title>MovieVerse - Search Movies</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="resume">
-
     <header>
-        <h1>KARPAGA PAVITHRA P</h1>
-        <p>Email: pavi@gmail.com</p>
-        <p>Phone: 1234567894</p>
-        <p>Location: Coimbatore</p>
+        <nav class="navbar">
+            <h2 class="logo">Movie<span>Verse</span></h2>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#movies">Movies</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
     </header>
 
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Discover Your Next <span>Favourite Movie</span></h1>
+            <p>Search thousands of movies and explore your favourite cinema world.</p>
 
-    <section>
-        <h2>Education</h2>
-
-        <h3>B.Tech - Artificial Intelligence and Data Science</h3>
-        <p>Sri Eshwar College of Engineering</p>
-        <p> CGPA: 8.56</p>
-        <p>year: 2026 present</p>
-
+            <div class="search-box">
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search movies..."
+                >
+                <button onclick="searchMovies()">Search</button>
+            </div>
+        </div>
     </section>
 
-    <section>
-        <h2>Technical Skills</h2>
-        
-           <ul>
-            <li>C++</li>
-            <li>Python</li>
-            <li>HTML</li>
-            <li>CSS</li>
+    <section class="movies" id="movies">
+        <h2>Popular Movies</h2>
 
-                </ul> 
-        
+        <div class="movie-container" id="movieContainer">
+
+            <div class="movie-card">
+                <img src="https://image.tmdb.org/t/p/w500/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg">
+                <h3>Oppenheimer</h3>
+                <p>⭐ 8.3 | 2023</p>
+            </div>
+
+            <div class="movie-card">
+                <img src="https://image.tmdb.org/t/p/w500/1pdfLvkbY9ohJlCjQH2CZjjYVvJ.jpg">
+                <h3>Dune: Part Two</h3>
+                <p>⭐ 8.5 | 2024</p>
+            </div>
+
+            <div class="movie-card">
+                <img src="https://image.tmdb.org/t/p/w500/kQs6keheMwCxJxrzV83VUwFtHkB.jpg">
+                <h3>Interstellar</h3>
+                <p>⭐ 8.7 | 2014</p>
+            </div>
+
+            <div class="movie-card">
+                <img src="https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg">
+                <h3>The Dark Knight</h3>
+                <p>⭐ 9.0 | 2008</p>
+            </div>
+
+        </div>
     </section>
 
-    <section>
-        <h2>Projects</h2>
-
-        <h3>TouristSafe - Smart Tourist Safety Monitoring System</h3>
+    <section class="about" id="about">
+        <h2>About MovieVerse</h2>
         <p>
-            Developing a smart tourist safety system using AI,
-            geofencing and real-time location tracking to identify
-            dangerous zones and provide safety alerts.
-        </p>
-
-        <h3>Smart Low Balance Emergency Auto Transfer System</h3>
-        <p>
-            A Python-based project designed to support emergency
-            balance transfers automatically.
+            MovieVerse helps you discover movies, explore ratings
+            and find your next favourite film.
         </p>
     </section>
 
-    <section>
-        <h2>Achievements</h2>
-        <ul>
-            <li>900+ problems solved in SkillRack</li>
-            <li>80+ problems solved on LeetCode</li>
-        </ul>
-    </section>
+    <footer>
+        <p>© 2026 MovieVerse. All Rights Reserved.</p>
+    </footer>
 
-    
-
-    
-
-</div>
-
+    <script src="script.js"></script>
 </body>
 </html>
